@@ -1,6 +1,7 @@
 @use "forward" as fw;
 
 /* HEADER */
+
 header {
   display: flex;
   justify-content: center;
@@ -16,13 +17,14 @@ header {
     max-width: 1250px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     .logo {
       display: flex;
       .name-content {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: 25px;
         img {
           display: block;
           width: 60px;
@@ -32,9 +34,10 @@ header {
         }
         div {
           > p {
-            font-size: 14px;
+            font-size: 12px;
             color: #9b9b9b;
             font-weight: 300;
+            text-align: center;
           }
         }
       }
@@ -45,6 +48,7 @@ header {
       padding: 10px;
       display: flex;
       align-items: center;
+      padding-right: 25px;
 
       &.fa-solid.fa-bars {
         color: #635e57;
@@ -80,7 +84,7 @@ header {
       z-index: 6;
       position: fixed;
       top: 0px;
-      background-color: #f3f3f3;
+      background-color: #fdfdfd;
       width: 300px;
       height: 100vh;
       text-align: right;
@@ -102,11 +106,10 @@ header {
 
         li {
           cursor: pointer;
-          background-color: #f3f3f3c5;
+          background-color: #fdfdfd;
           border-bottom: 1px solid rgba(27, 27, 27, 0.315);
           transition: background-color 0.3s ease-in;
           &:hover {
-            background-color: #bd9655;
             font-weight: 600;
           }
 
@@ -138,6 +141,21 @@ header {
           font-weight: 600;
           color: rgba(25, 26, 35, 1);
           transition: background-color 0.3s ease;
+
+          cursor: pointer;
+          width: 100%;
+          padding: 8px 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: 400;
+          text-decoration: none;
+          background-color: #fff;
+          border-radius: 4px;
+          border: 1px solid #b9b9b9;
+          transition: all 0.2sease-in;
+          width: 150px;
 
           &:hover {
             color: #f3f3f3;
@@ -176,7 +194,8 @@ header {
     }
   }
 }
-@media (min-width: 1000px) {
+
+@media (min-width: 600px) {
   /* HEADER */
   header {
     .header-wrapper {
@@ -185,18 +204,36 @@ header {
         .name-content {
           display: flex;
           flex-direction: row;
-          width: 480px;
-          margin-left: 30px;
+          width: 450px;
+          margin-left: 20px;
+
           div {
             display: flex;
             > p {
-              font-size: 14px;
+              font-size: 12px;
               margin-top: 10px;
               margin-left: 20px;
               color: #afafaf;
               font-weight: 300;
             }
+
+            > p {
+              display: flex;
+            }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  /* HEADER */
+  header {
+    .header-wrapper {
+      .logo {
+        display: flex;
+        .name-content {
           img {
             display: block;
             width: 60px;
@@ -217,7 +254,7 @@ header {
         visibility: inherit;
         display: flex;
         justify-content: end;
-        padding-right: 30px;
+        padding-right: 20px;
         &.active {
           flex-direction: row;
         }
@@ -238,7 +275,6 @@ header {
         }
         ul {
           flex-direction: row;
-          font-size: 16px;
           gap: 10px;
           margin-top: inherit;
 
@@ -249,6 +285,7 @@ header {
             line-height: initial;
             border: none;
             background-color: transparent;
+            font-size: 14px;
 
             .home {
               color: #bd9655;
@@ -272,21 +309,32 @@ header {
           }
         }
         .btn-nav {
-          display: flex;
-          justify-content: center;
-          align-items: center;
           cursor: pointer;
           margin-top: 0px;
-          margin-left: 30px;
+          margin-left: 25px;
+          box-shadow: 1px 1px 0px 0px #bd9655;
+          border-radius: 5px;
+          width: 140px;
 
           a {
-            padding: 5px 10px;
-            border-radius: 3px;
-            line-height: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 8px 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #b9b9b9;
+            transition: all 0.2sease-in;
             &:hover {
-              color: #f3f3f3;
-              background-color: rgba(25, 26, 35, 1);
               transition: background-color 0.3s ease;
+              background-color: #f3faff;
+              color: #333;
+              transform: translate(1px, 1px);
             }
           }
         }
@@ -297,6 +345,7 @@ header {
     }
   }
 }
+
 /* HERO */
 .hero-wrapper {
   width: 100%;
