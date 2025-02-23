@@ -33,14 +33,12 @@
           <nav id="menu">
             <i id="close" class="fa-solid fa-xmark" style="color: #191a23"></i>
             <ul>
-              <li><a href="#cases">Cases</a></li>
-              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#cases">Protótipos</a></li>
               <li><a href="#como">Como funciona?</a></li>
             </ul>
             <div class="btn-nav">
-              <a href="https://api.whatsapp.com/send?phone=5532991598820"
-                >Contato</a
-              >
+              <a href="#contato">Contato</a>
             </div>
           </nav>
         </div>
@@ -54,7 +52,7 @@
             <p>
               Converta leads em clientes no piloto automático, eliminando a
               necessidade de SDRs caros. Ganhe tempo, aumente a eficiência e
-              escale mais de 30% sem precisar ampliar sua equipe atual.
+              escale sem precisar ampliar sua equipe atual.
             </p>
             <div class="location">
               <span><i class="fa-solid fa-location-dot"></i>Araranguá/SC</span>
@@ -64,9 +62,7 @@
               >
             </div>
             <div class="btn-constructor">
-              <span class="bg-btn"></span>
-              <a class="btn-diago" href="">Como Funciona?</a>
-              <span class="btn-hover"></span>
+              <a class="btn-diago" href="#como">Como Funciona?</a>
             </div>
           </div>
         </div>
@@ -100,7 +96,7 @@
 
       <!-- Serviços -->
       <section>
-        <div class="service-wrapper">
+        <div id="services" class="service-wrapper">
           <p>services</p>
           <div class="service">
             <h2>Serviços</h2>
@@ -174,7 +170,7 @@
 
       <!-- Como funciona -->
       <section>
-        <div class="works-wrapper">
+        <div id="como" class="works-wrapper">
           <p>Steps</p>
           <div class="works">
             <div class="title-works">
@@ -220,7 +216,7 @@
 
       <!-- Prototipos -->
       <section>
-        <div class="prototype-wrapper">
+        <div id="cases" class="prototype-wrapper">
           <p>prototypes</p>
           <div class="prototype">
             <h2>Protótipos</h2>
@@ -271,21 +267,22 @@
       </section>
 
       <!-- Contato -->
-      <section class="position">
-        <!-- <div class="img-bk-contact"></div> -->
+      <section id="contato" class="position">
+        <div class="img-bk-contact"></div>
         <div class="contact-wrapper">
           <p>Contact</p>
           <div class="contact">
             <h2>Entre em Contato</h2>
             <p>
-              Escolha a hora e a data que melhor se adequam a você. Tente
-              fornecer o máximo de detalhes possível para que possamos nos
-              preparar para a chamada.
+              Estou pronto para desenvolver soluções personalizadas em automação
+              de processos e agentes de IA para resolver seu problema e melhorar
+              o desempenho da sua empresa. Preencha o formulário abaixo e
+              entrarei em contato o mais rápido possível!
             </p>
             <div class="form-box">
               <div class="left-form">
                 <img src="/src/img/3x4-min.png" alt="Foto de Edio" />
-                <h3>Edio AI</h3>
+                <h3>Edio Gonçalves</h3>
                 <p class="discovery"><strong>Discovery Call</strong></p>
                 <div class="time-discovery">
                   <svg
@@ -339,14 +336,14 @@
                   <label for="nome">Nome*</label>
                   <input type="text" id="nome" required />
                 </div>
+                <div class="form-group">
+                  <label for="sobrnome">Sobrenome*</label>
+                  <input type="text" id="sobrenome" required />
+                </div>
 
                 <div class="form-group">
                   <label for="email">E-mail*</label>
                   <input type="email" id="email" required />
-                  <small
-                    >Você pode adicionar convidados separando os e-mails por
-                    vírgula.</small
-                  >
                 </div>
 
                 <div class="form-group">
@@ -356,10 +353,13 @@
 
                 <div class="form-group">
                   <label for="desafio"
-                    >Descreva brevemente o desafio que você deseja
-                    resolver.*</label
+                    >Descreva o desafio que você deseja resolver.*</label
                   >
-                  <textarea id="desafio" required></textarea>
+                  <textarea
+                    id="desafio"
+                    placeholder="Digite aqui..."
+                    required
+                  ></textarea>
                 </div>
 
                 <div class="form-group">
@@ -376,8 +376,12 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="telefone">Enviar mensagens de texto para?*</label>
-                  <input type="tel" id="telefone" />
+                  <label for="telefone">Telefone*</label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    placeholder="(00) 0000-0000"
+                  />
                 </div>
 
                 <div class="checkbox-group">

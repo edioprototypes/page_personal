@@ -24,7 +24,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 25px;
+        margin-left: 15px;
         img {
           display: block;
           width: 60px;
@@ -48,7 +48,7 @@ header {
       padding: 10px;
       display: flex;
       align-items: center;
-      padding-right: 25px;
+      padding-right: 15px;
 
       &.fa-solid.fa-bars {
         color: #635e57;
@@ -204,15 +204,14 @@ header {
         .name-content {
           display: flex;
           flex-direction: row;
-          width: 450px;
-          margin-left: 20px;
+          width: 440px;
 
           div {
             display: flex;
             > p {
               font-size: 12px;
               margin-top: 10px;
-              margin-left: 20px;
+              margin-left: 15px;
               color: #afafaf;
               font-weight: 300;
             }
@@ -254,7 +253,7 @@ header {
         visibility: inherit;
         display: flex;
         justify-content: end;
-        padding-right: 20px;
+        padding-right: 15px;
         &.active {
           flex-direction: row;
         }
@@ -311,7 +310,7 @@ header {
         .btn-nav {
           cursor: pointer;
           margin-top: 0px;
-          margin-left: 25px;
+          margin-left: 10px;
           box-shadow: 1px 1px 0px 0px #bd9655;
           border-radius: 5px;
           width: 140px;
@@ -381,72 +380,30 @@ header {
 
     .btn-constructor {
       cursor: pointer;
-      margin-top: 30px;
-      position: relative;
-      display: flex;
-      width: 220px;
-
-      .btn-diago {
-        position: absolute;
+      margin-top: 40px;
+      margin-left: 0px;
+      box-shadow: 1px 1px 0px 0px #bd9655;
+      border-radius: 5px;
+      max-width: 280px;
+      a {
+        cursor: pointer;
+        width: 100%;
+        padding: 14px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 400;
         text-decoration: none;
-        padding: 10px 0px 10px 40px;
-        width: 200px;
-        z-index: 1;
-        transition: color 0.3s ease, background-color 0.3s ease;
-      }
-
-      .btn-hover {
-        content: "";
-        z-index: 0;
-        top: 0;
-        left: 8px;
-        position: absolute;
-        height: 46px;
-        width: 8px;
-        transform: skewX(-25deg);
-        background-color: fw.$primary-color;
-        border-radius: 3px 0px 0px 3px;
-
-        transition: width 0.3s ease;
-      }
-      .bg-btn {
-        position: absolute;
-        left: 10px;
-        height: 46px;
-        width: 180px;
-        background: linear-gradient(
-          90deg,
-          rgba(0, 0, 0, 0.03),
-          rgba(0, 0, 0, 0)
-        );
-        transform: skewX(-25deg);
-        position: relative;
-
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background: linear-gradient(to right, #3c5e8b, white);
-        }
-
-        &::before {
-          top: 0;
-        }
-
-        &::after {
-          bottom: 0;
-        }
-      }
-
-      &:hover {
-        .btn-hover {
-          width: 200px;
-        }
-        .btn-diago {
-          color: fw.$white-color;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #b9b9b9;
+        transition: all 0.2sease-in;
+        &:hover {
+          transition: background-color 0.3s ease;
+          background-color: #3c5e8b;
+          color: #ffffff;
+          transform: translate(1px, 1px);
         }
       }
     }
@@ -469,6 +426,11 @@ header {
         flex-direction: column;
         margin-top: 20px;
         gap: 8px;
+      }
+      .btn-constructor {
+        margin: 40px auto 0px;
+        max-width: 350px;
+        width: 90%;
       }
     }
   }
@@ -895,13 +857,18 @@ header {
 /* CONTACT */
 .position {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   .img-bk-contact {
+    background-color: #333;
     position: absolute;
     bottom: 0px;
     display: flex;
     width: 100%;
     height: 500px;
-    background-image: url(/src/img/32530040_cq6.jpg);
+    background-image: url(/src/img/pngwing.com.png);
     background-size: cover;
   }
   .contact-wrapper {
@@ -962,6 +929,7 @@ header {
           color: #6e6e6e;
           margin-top: 10px;
           font-size: 16px;
+          font-weight: 300;
         }
         .discovery {
           font-size: 26px;
