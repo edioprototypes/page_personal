@@ -1,42 +1,42 @@
 {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 175,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 700
       }
     },
     "color": {
-      "value": "#3c3c3c"
+      "value": "#484848"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#484848"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 4
       },
       "image": {
-        "src": "img/github.svg",
+        "src": "",
         "width": 100,
         "height": 100
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.2,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 0.2,
         "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 2,
       "random": true,
       "anim": {
         "enable": false,
@@ -48,15 +48,15 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#616161",
-      "opacity": 0.4,
-      "width": 1
+      "color": "#434343",
+      "opacity": 0.2,
+      "width": 0.4
     },
     "move": {
       "enable": true,
-      "speed": 2,
-      "direction": "none",
-      "random": false,
+      "speed": 0.35,
+      "direction": "top",
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
@@ -71,11 +71,11 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
