@@ -1,7 +1,6 @@
 @use "forward" as fw;
 
 /* HEADER */
-
 header {
   display: flex;
   justify-content: center;
@@ -346,7 +345,7 @@ header {
 }
 
 /* HERO */
-.testet {
+.particles {
   position: relative;
   canvas {
     display: block;
@@ -889,7 +888,7 @@ header {
   justify-content: center;
 
   .img-bk-contact {
-    background-color: #333;
+    background-color: #a53737;
     position: absolute;
     bottom: 0px;
     display: flex;
