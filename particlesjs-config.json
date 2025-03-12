@@ -1,10 +1,10 @@
 {
   "particles": {
     "number": {
-      "value": 175,
+      "value": 155,
       "density": {
         "enable": true,
-        "value_area": 700
+        "value_area": 1000
       }
     },
     "color": {
@@ -26,7 +26,7 @@
       }
     },
     "opacity": {
-      "value": 0.4,
+      "value": 0.5,
       "random": false,
       "anim": {
         "enable": false,
@@ -47,9 +47,9 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 180,
       "color": "#181818",
-      "opacity": 0.2,
+      "opacity": 0.3,
       "width": 0.4
     },
     "move": {

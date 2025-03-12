@@ -34,3 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(nextSlide, 5000); // Avança automaticamente a cada 5 segundos
 });
+
+// Animação do FAQ
+const faqArrows = document.querySelectorAll(".questions");
+
+faqArrows.forEach((arrow) => {
+  arrow.addEventListener("click", (event) => {
+    event.stopPropagation();
+
+    const questionItem = arrow.closest(".questions");
+    questionItem.classList.toggle("active");
+  });
+});
