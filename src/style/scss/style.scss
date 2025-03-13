@@ -497,15 +497,35 @@ header {
       display: flex;
       justify-content: center;
       gap: 50px;
-      min-height: 500px;
       .benefits-box {
         background-color: #fff;
-        max-width: 450px;
+        min-height: 500px;
+        max-width: 440px;
         width: 100%;
-        padding: 40px;
+        padding: 48px;
         border-radius: 6px;
         border: 1px solid rgba(26, 26, 26, 0.1);
         box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.08);
+        .benefits-box-txt {
+          h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+          p {
+            color: #555;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    @media (max-width: 910px) {
+      .benefits-box-wrapper {
+        flex-direction: column;
+        align-items: center;
+        .benefits-box {
+          max-width: 640px;
+          min-height: 440px;
+        }
       }
     }
   }
@@ -518,6 +538,20 @@ header {
       padding-top: 20px;
       gap: 20px;
       align-items: center;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .benefits-wrapper {
+    padding: 50px 20px;
+    .benefits {
+      padding-top: 20px;
+      gap: 10px;
+      > h2 {
+        align-self: flex-start;
+        font-size: 38px;
+        line-height: 1;
+      }
     }
   }
 }
@@ -778,6 +812,7 @@ header {
   padding: 50px 20px;
   max-width: 1250px;
   margin: auto;
+
   > p {
     color: #bd9655;
     text-transform: uppercase;
@@ -790,6 +825,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     > h2 {
       font-size: 48px;
     }
@@ -802,25 +838,46 @@ header {
     }
   }
   .carousel-container {
-    overflow: hidden;
     position: relative;
-    max-width: 100%;
-    padding: 8px;
-    .carousel {
-      display: flex;
-      .carousel-item {
-        flex: 0 0 33.33%;
-        padding: 10px;
+    width: 100%;
+    max-width: 1020px;
+    margin: auto;
 
-        iframe {
-          width: 340px;
-          height: 315px;
-          border-radius: 10px;
-          border: 1px dashed #bd9655;
-          box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+    .carousel-container-hidden {
+      overflow: hidden;
+      .carousel {
+        display: flex;
+        .carousel-item {
+          flex: 0 0 33.33%;
+          margin: 0;
+          padding: 0;
+          .box-video {
+            width: 340px;
+            height: 315px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .box-video-play {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+              border-radius: 10px;
+              border: 1px dashed #bd9655;
+              background-color: #9bc6ff;
+              width: 96%;
+              height: 96%;
+            }
+            p {
+              font-size: 58px;
+              font-weight: 700;
+              color: #ffffff;
+            }
+          }
         }
       }
     }
+
     button {
       position: absolute;
       top: 50%;
@@ -838,15 +895,51 @@ header {
       }
     }
   }
-
   #prev {
-    left: 10px;
+    left: -8px;
   }
-
   #next {
-    right: 10px;
+    right: -8px;
   }
 }
+@media (max-width: 1150px) {
+  .prototype-wrapper {
+    .carousel-container {
+      margin: auto;
+      width: 680px;
+
+      .carousel-container-hidden {
+        .carousel {
+          .carousel-item {
+            flex: 0 0 50%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .prototype-wrapper {
+    overflow: hidden;
+    .carousel-container {
+      background-color: red;
+      margin: auto;
+      max-width: 340px;
+      .carousel-container-hidden {
+        .carousel {
+          .carousel-item {
+            flex: 0 0 100%;
+            .box-video {
+              max-width: 340px;
+              max-height: 315px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .prototype-wrapper {
     .prototype {
@@ -978,7 +1071,7 @@ header {
           .faq-box {
             transform-origin: 0 100%;
             color: #fff;
-            border: 1px solid #3a3a3a;
+            border: 1px solid #3c5e8b;
             border-radius: 8px;
             width: 390px;
             padding: 32px;
@@ -1068,7 +1161,7 @@ header {
               .faq-btn-arrow {
                 flex-shrink: 0;
                 background-color: #ffffff;
-                border: 1px solid #00000044;
+                border: 1px solid #00000073;
                 border-radius: 50%;
                 display: flex;
                 padding: 8px;

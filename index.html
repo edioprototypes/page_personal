@@ -76,21 +76,24 @@
             </p>
             <div class="benefits-box-wrapper">
               <div class="benefits-box">
-                <div>
+                <div class="benefits-box-txt">
                   <h3>Sistemas Integrados</h3>
                   <p>
-                    Crie um sistema inteligente e preciso que conecte todos os
-                    aplicativos utilizados na sua operação para potencializar
-                    sua eficiência e visualização.
+                    Conecte todos os seus aplicativos em um sistema inteligente
+                    e integrado. Automatize processos, otimize tempo e tenha uma
+                    visão unificada da sua operação para máxima eficiência e
+                    escalabilidade. Não jogue seu tempo fora!
                   </p>
                 </div>
               </div>
               <div class="benefits-box">
-                <div>
-                  <h3>Refinamento</h3>
+                <div class="benefits-box-txt">
+                  <h3>Agentes IA</h3>
                   <p>
-                    Nós criamos sistemas visuais e otimizados para constantes
-                    refinamentos e atualizações de maneira simples e intuitiva.
+                    Transformamos inteligência artificial em crescimento real
+                    para o seu negócio. Com tecnologia de ponta e soluções sob
+                    medida, aceleramos e maximizamos seus processos. Sem
+                    complicações, apenas resultados para você.
                   </p>
                 </div>
               </div>
@@ -232,40 +235,47 @@
               detalhes e garantir que tudo esteja alinhado às suas necessidades.
             </p>
             <div class="carousel-container">
-              <div class="carousel">
-                <div class="carousel-item">
-                  <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID_1"
-                    allowfullscreen
-                  ></iframe>
+              <div class="carousel-container-hidden">
+                <div class="carousel">
+                  <div class="carousel-item">
+                    <div class="box-video">
+                      <div class="box-video-play">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box-video">
+                      <div class="box-video-play">
+                        <p>2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box-video">
+                      <div class="box-video-play">
+                        <p>3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box-video">
+                      <div class="box-video-play">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box-video">
+                      <div class="box-video-play">
+                        <p>5</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID_2"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="carousel-item">
-                  <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID_3"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="carousel-item">
-                  <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID_4"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="carousel-item">
-                  <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID_5"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
               </div>
-              <button id="prev">&#10094;</button>
-              <button id="next">&#10095;</button>
             </div>
           </div>
         </div>
@@ -745,54 +755,6 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
       particlesJS.load("particles-js", "particlesjs-config.json");
-    </script>
-    <script type="text/javascript">
-      (function (C, A, L) {
-        let p = function (a, ar) {
-          a.q.push(ar);
-        };
-        let d = C.document;
-        C.Cal =
-          C.Cal ||
-          function () {
-            let cal = C.Cal;
-            let ar = arguments;
-            if (!cal.loaded) {
-              cal.ns = {};
-              cal.q = cal.q || [];
-              d.head.appendChild(d.createElement("script")).src = A;
-              cal.loaded = true;
-            }
-            if (ar[0] === L) {
-              const api = function () {
-                p(api, arguments);
-              };
-              const namespace = ar[1];
-              api.q = api.q || [];
-              if (typeof namespace === "string") {
-                cal.ns[namespace] = cal.ns[namespace] || api;
-                p(cal.ns[namespace], ar);
-                p(cal, ["initNamespace", namespace]);
-              } else p(cal, ar);
-              return;
-            }
-            p(cal, ar);
-          };
-      })(window, "https://app.cal.com/embed/embed.js", "init");
-      Cal("init", "discoverycall", { origin: "https://cal.com" });
-
-      Cal.ns.discoverycall("inline", {
-        elementOrSelector: "#my-cal-inline",
-        config: { layout: "month_view", theme: "light" },
-        calLink: "protomind/discoverycall",
-      });
-
-      Cal.ns.discoverycall("ui", {
-        theme: "light",
-        cssVarsPerTheme: { light: { "cal-brand": "#3c5e8b" } },
-        hideEventTypeDetails: false,
-        layout: "month_view",
-      });
     </script>
   </body>
 </html>
