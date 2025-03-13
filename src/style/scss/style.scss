@@ -1371,7 +1371,6 @@ footer {
         @include fw.flex-center;
         text-decoration: none;
         background-color: fw.$secondary-color;
-        border: 1px solid fw.$black-color;
         border-radius: 3px;
         box-shadow: -1px 1px 0px 0px fw.$black-color;
         .fa-chevron-right {
